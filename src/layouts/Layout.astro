@@ -1,24 +1,41 @@
 ---
-interface Props {
-	title: string;
-	description?: string;
-	image?: string;
-}
-
-const { title, description = "A community of music producers and enthusiasts", image } = Astro.props;
+import Header from "../components/Header.svelte";
+import Footer from "../components/Footer.svelte";
+import Resume from "../components/Resume.svelte";
+import Summary from "../components/Summary.svelte";
+import Projects from "../components/Projects.svelte";
+import "../styles/global.css";
+const { pageTitle } = Astro.props;
 ---
 
-<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta property="og:image" content={image} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="island">
+        <!-- Island: Photo and Summary -->
+        <Summary />
+      </div>
+      <div class="island">
+        <!-- Island: Projects and description -->
+        <Projects />
+      </div>
+    </main>
+    <Resume />
+    <footer>
+      <Footer />
+    </footer>
+  </body>
 </html>
+
+<style>
+  body {
+    @apply bg-gray-900 text-white;
+  }
+</style>
