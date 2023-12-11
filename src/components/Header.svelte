@@ -1,3 +1,10 @@
+<script lang="ts">
+  function linkedinClick() {
+    console.log("LinkedIn Clicked");
+    window.open("https://www.google.com", "_blank");
+  }
+</script>
+
 <div class="min-h-full">
   <nav class="bg-[#0284c7]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -11,7 +18,9 @@
         </div>
         <div class="hidden md:block">
           <div class="ml-4 flex items-baseline space-x-10 md:ml-6">
-            <img src="/icons/linkedin_icon.png" alt="LinkedIn Icon" />
+            <button type="button" on:click={linkedinClick}>
+              <img src="/icons/linkedin_icon.png" alt="LinkedIn Icon" />
+            </button>
             <img src="/icons/github_icon.png" alt="GitHub Icon" />
             <img src="/icons/mail_icon.png" alt="Mail Icon" />
           </div>
