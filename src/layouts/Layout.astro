@@ -10,20 +10,15 @@ const { pageTitle } = Astro.props;
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <Header client:visible>
+    </Header>
   </head>
   <body>
-    <Header />
     <main>
-      <div class="island">
-        <!-- Island: Photo and Summary -->
+      <div>
         <Summary />
       </div>
-      <div class="island">
-        <!-- Island: Projects and description -->
+      <div>
         <Projects />
       </div>
     </main>

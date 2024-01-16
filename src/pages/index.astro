@@ -8,23 +8,21 @@ import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <Header client:visible/>
   </head>
   <body>
     <main>
-        <Header />
-
       <div class="island">
-        <!-- Island: Photo and Summary -->
         <Summary />
       </div>
       <div class="island">
-        <!-- Island: Projects and description -->
         <Projects />
       </div>
     </main>
