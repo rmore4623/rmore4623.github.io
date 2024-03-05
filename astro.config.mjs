@@ -5,5 +5,8 @@ import svelte from "@astrojs/svelte";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), svelte()],
-  site: 'https://rmore4623.github.io',
+  build: {
+    site: 'https://rmore4623.github.io',
+  },
+  output: "static"
 });
