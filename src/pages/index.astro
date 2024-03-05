@@ -1,9 +1,5 @@
 ---
-import Header from "../components/Header.svelte";
-import Footer from "../components/Footer.svelte";
-import Resume from "../components/Resume.svelte";
-import Summary from "../components/Summary.svelte";
-import Projects from "../components/Projects.svelte";
+import MainPage from "../components/MainPage.svelte";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
@@ -15,26 +11,10 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <Header client:visible/>
   </head>
   <body>
     <main>
-      <div class="island">
-        <Summary />
-      </div>
-      <div class="island">
-        <Projects />
-      </div>
+      <MainPage client:visible/>
     </main>
-    <Resume />
-    <footer>
-      <Footer />
-    </footer>
   </body>
 </html>
-
-<style>
-  body {
-    @apply bg-gray-900 text-white;
-  }
-</style>
