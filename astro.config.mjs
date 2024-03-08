@@ -7,6 +7,6 @@ export default defineConfig({
   integrations: [tailwind(), svelte()],
   build: {
     site: 'https://rmore4623.github.io',
-  },
+   },
   output: "dist"
 });
