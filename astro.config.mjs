@@ -8,5 +8,5 @@ export default defineConfig({
   build: {
     site: 'https://rmore4623.github.io',
   },
-  output: "static"
+  output: "dist"
 });
