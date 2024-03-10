@@ -1,5 +1,5 @@
 ---
-import MainPage from "../components/MainPage.svelte";
+import ProjectsPage from "../components/ProjectsPage.svelte";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
@@ -14,7 +14,7 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <main>
-      <MainPage client:visible />
+      <ProjectsPage client:visible />
     </main>
   </body>
 </html>
