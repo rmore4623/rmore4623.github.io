@@ -2,8 +2,7 @@
     let images = [
       { src: 'icons/MediaNaranja.png', 
         title: 'Media Naranja Speed Dating', 
-        description: `Speed dating web application that seamlessly combines React
-                      for the dynamic user interface and Supabase for a backend infrastructure.
+        description: `Speed dating web application created with React and Supabase.
                       The heart of the system lies in the admin dashboard, offering administrators
                       the power to effortlessly create and manage events. Leveraging Supabase\'s
                       secure authentication, the application ensures airtight access control.

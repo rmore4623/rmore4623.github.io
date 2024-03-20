@@ -1,6 +1,4 @@
 <script lang="js">
-  import { fade } from "svelte/transition";
-
   function downloadResume() {
     const a = document.createElement("a");
 
