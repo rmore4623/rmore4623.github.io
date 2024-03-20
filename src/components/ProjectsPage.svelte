@@ -2,9 +2,8 @@
   import projects from "./projects.json";
 </script>
 
-<div style="background-color:#F5E8DD">
   <main
-    class="box-border flex relative flex-col shrink-0 ml-[calc(50%_-_50vw)] h-screen"
+    class="box-border flex relative flex-col shrink-0 ml-[calc(50%_-_50vw)] h-auto landscape:h-screen overflow-hidden" style="background-color:#f5e8dd;"
   >
     <header class="box-border flex flex-col relative shrink-0 justify-center self-center items-center m-5 h-auto">
         <h1>Projects</h1>
@@ -25,6 +24,7 @@
             class="relative w-full md:w-6/12 hover:[transform:rotateY(180deg)] [transform-style:preserve-3d] transition-all duration-500 ease-in"
           >
             <div
+              id="frontside"
               class="flex flex-col [backface-visibility:hidden] rounded-xl"
               style="background-color:#e2e3e5"
             >
@@ -37,6 +37,7 @@
               />
             </div>
             <div
+              id="backside"           
               class="absolute inset-0 flex flex-col justify-center items-center rounded-xl px-3 [backface-visibility:hidden] [transform:rotateY(180deg)] shadow-xl shadow-black/40"
               style="background-color:{project.primary_color}"
             >
@@ -51,4 +52,3 @@
       </div>
     </section>
   </main>
-</div>

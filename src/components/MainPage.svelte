@@ -21,16 +21,16 @@
   <div
     class="box-border flex sticky flex-col shrink-0 w-screen h-screen ml-[calc(50%_-_50vw)]"
   >
-    <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <div class="flex gap-5 flex-col max-md:gap-0">
       <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full h-screen">
         <div
-          class="box-border flex relative flex-col shrink-0 my-auto min-h-screen bg-white"
+          class="box-border flex flex-col shrink-0 my-auto min-h-screen bg-white"
         >
           <div
             class="box-border flex relative flex-col shrink-0 grow-0 h-[100px]"
           >
             <div class="box-border flex relative flex-col shrink-0 m-auto">
-              <div class="hidden md:flex gap-5 max-md:flex-col max-md:gap-0">
+              <div class="md:flex gap-5 max-md:flex-col max-md:gap-0">
                 <div class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <a
                     class="box-border relative shrink-0 px-6 py-4 my-2.5 text-center rounded appearance-none cursor-pointer text-[black]"
@@ -65,14 +65,14 @@
             </div>
           </div>
           <div
-            class="flex flex-col box-border py-2.5 m-auto h-screen self-center justify-center"
+            class="flex flex-col box-border flex-shrink-0 py-2.5 m-auto min-h-screen self-center justify-center max-md:items-center"
           >
             <h1 class="text-8xl font-bold">Roman Moreno Jr</h1>
             <h2 class="text-4xl font-normal">Aspiring Software Developer</h2>
           </div>
           <section
             id="about"
-            class="box-border flex relative flex-col shrink-0 my-auto h-screen bg-white self-center justify-center"
+            class="box-border flex flex-col flex-shrink-0 my-auto min-h-screen bg-white self-center justify-center"
           >
             <div class="mx-auto max-w-prose p-5">
               <h1 class="text-7xl py-6">About Me</h1>
@@ -99,7 +99,7 @@
           </section>
           <section
             id="contact"
-            class="box-border flex relative flex-col my-auto h-screen bg-white self-center justify-center"
+            class="box-border flex flex-col flex-shrink-0 my-auto min-h-screen bg-white self-center justify-center"
           >
             <div class="mx-auto p-5 items-center justify-center">
               <div
