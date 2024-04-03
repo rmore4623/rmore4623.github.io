@@ -2,8 +2,8 @@
   function downloadResume() {
     const a = document.createElement("a");
 
-    a.href = "/files/Resume.pdf";
-    a.download = "romans_resume.pdf";
+    a.href = "/files/roman_morenojr_resume_p.pdf";
+    a.download = "roman_morenojr_resume_p.pdf";
     a.click();
   }
 
