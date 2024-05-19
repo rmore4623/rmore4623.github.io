@@ -180,3 +180,6 @@
     </div>
   </div>
 </div>
+
+<!-- for custom image -->
+<!-- style="scale: 1.5; transform: scale(1.5);" -->
